@@ -1,0 +1,13 @@
+ID=1680675
+Product=PingFederate
+Version=10.0
+IssueDate=2020-05-09
+Tier=Free
+ExpirationDate=2020-06-08
+EnforcementType=7
+SaasProvisioning=true
+WSTrustSTS=true
+OAuth=true
+Generator=WebAPI
+SignCode=FF07
+Signature=302D0215008BE9587FAF6E50FCEE2E94E0D37FD8BE9F8FF1290214740F7CFE54FF22E7C743EC69EA4C777AF16FA1B2

@@ -1,0 +1,169 @@
+2020-05-14 21:18:54,362  INFO  [com.pingidentity.crypto.JCEManagerBase] Using cipher suites defined in com.pingidentity.crypto.SunJCEManager.xml
+2020-05-14 21:18:54,550  INFO  [com.pingidentity.crypto.CertificateServiceImpl] RSA key size 1024 is supported
+2020-05-14 21:18:54,550  INFO  [com.pingidentity.crypto.CertificateServiceImpl] RSA key size 2048 is supported
+2020-05-14 21:18:54,551  INFO  [com.pingidentity.crypto.CertificateServiceImpl] RSA key size 4096 is supported
+2020-05-14 21:18:54,552  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA256withRSA is supported
+2020-05-14 21:18:54,552  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA384withRSA is supported
+2020-05-14 21:18:54,552  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA512withRSA is supported
+2020-05-14 21:18:54,553  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Selected 2048 as default key size for RSA
+2020-05-14 21:18:54,553  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Selected SHA256withRSA as default signature algorithm for RSA
+2020-05-14 21:18:54,575  INFO  [com.pingidentity.crypto.CertificateServiceImpl] EC key size 256 is supported
+2020-05-14 21:18:54,575  INFO  [com.pingidentity.crypto.CertificateServiceImpl] EC key size 384 is supported
+2020-05-14 21:18:54,575  INFO  [com.pingidentity.crypto.CertificateServiceImpl] EC key size 521 is supported
+2020-05-14 21:18:54,577  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA256withECDSA is supported
+2020-05-14 21:18:54,578  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA384withECDSA is supported
+2020-05-14 21:18:54,579  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA512withECDSA is supported
+2020-05-14 21:18:54,579  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Selected 256 as default key size for EC
+2020-05-14 21:18:54,579  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Selected SHA256withECDSA as default signature algorithm for EC
+2020-05-14 21:18:55,073  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Loaded 148 trust anchors from /opt/java/lib/security/cacerts
+2020-05-14 21:18:56,277  INFO  [org.sourceid.saml20.domain.mgmt.impl.MediatorImpl] Server is standalone.
+2020-05-14 21:18:57,028  INFO  [org.sourceid.saml20.domain.mgmt.impl.DataSourceManagerImpl] Initializing JNDI lookup
+2020-05-14 21:18:57,117  INFO  [org.eclipse.jetty.util.log] Logging initialized @8900ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-05-14 21:18:57,265  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] ConnectionTimeOut 60000
+2020-05-14 21:18:57,265  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] RequestTimeOut 120000
+2020-05-14 21:18:57,265  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] VerifyHostname true
+2020-05-14 21:18:57,268  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] Shutting down the SoapHttpConnectionPoolingManager
+2020-05-14 21:18:57,268  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] SoapHttpConnectionPoolingManager shut down
+2020-05-14 21:18:57,982  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] Shutting down the SoapHttpConnectionPoolingManager
+2020-05-14 21:18:57,982  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] SoapHttpConnectionPoolingManager shut down
+2020-05-14 21:18:58,757  WARN  [org.eclipse.jetty.server.AbstractConnector] Ignoring deprecated socket close linger time
+2020-05-14 21:18:58,771  WARN  [org.eclipse.jetty.server.AbstractConnector] Ignoring deprecated socket close linger time
+2020-05-14 21:18:58,772  WARN  [org.eclipse.jetty.server.AbstractConnector] Ignoring deprecated socket close linger time
+2020-05-14 21:18:59,104  WARN  [org.eclipse.jetty.server.AbstractConnector] Ignoring deprecated socket close linger time
+2020-05-14 21:18:59,126  INFO  [org.eclipse.jetty.server.Server] jetty-9.4.18.v20190429patch5; built: 2020-01-22T23:47:18.414Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-LTS
+2020-05-14 21:18:59,960  INFO  [org.sourceid.websso.servlet.InitServlet] Initializing...
+2020-05-14 21:19:00,162  INFO  [com.pingidentity.crypto.jwk.JwkFacilitator] Using JwkFacilitator() com.pingidentity.crypto.jwk.JwkFacilitator@36224f93 with com.pingidentity.crypto.jwk.DirectJsonWebKeysAdder@1ee5632d
+2020-05-14 21:19:00,733  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.RsaJsonWebKey{kty=RSA, kid=yZh2dAKJMGewBqTzgYBNPKo9ScA, use=sig, n=nLFK82yj-3tfBwhsxtOsibZdQwOpiSs7QrY9PlnctcAdXrC-HjTrwIrJZowFESeqMx2jgwt1N7O-M23YWTcZokugUV-Q7zefacOfrcrHAjrxYlOb4qrhCCXtq8pH35WIL61XzSc3wsFvm2IfhiNUh2H5GyRfqI7KYFk0swxzVXa4DJG8regc7Yxf1HqHBhAZSxn1bIXEWDy_nJglKjPB5i_f2g_IaolBtUfiaY4Pd6C71VrXfdCF_a65n3rFDYmfFeu9Sqh16E_bRwnjbMppupYGmsUBdmHPdd_Pyk6UkoUFYMDJnNvo5Yhp-UibykmnYgGiYPK0NprMKmcJtghxmw, e=AQAB}
+2020-05-14 21:19:00,735  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=GCwliU_adFBd2IDiGfFABj8GhFs, use=sig, x=taYsH-p-NF2-m86tPZGAvXIaLGex_wJkEtdRx52Z27k, y=SIt-9I8FkobqJbMNV9kwm9lzsLdp2a7JsQgDRinhSOI, crv=P-256}
+2020-05-14 21:19:00,735  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=b1RGoGp8T-YsQ9EJij9snXkEtWw, use=sig, x=gLWD1ip13xqm3B9oTSkvB_PtCf8atPFQbV8soiDtd-vnm2btvJDIyCKT3_CfcBW1, y=v0y9fCIGRkNp6Jm2hmGBZ-J3DZSNFI2_X0KYTbXjcIq5_BZ1zviY8gIi8F3pR3zD, crv=P-384}
+2020-05-14 21:19:00,736  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=e20aGmdTeSUGQr4tWusHGF1QOb8, use=sig, x=ARgBw7qPt7lC0K6Ye-6ctj4tkBdOtxH9r3T79bFTQ9UVf6th35QuGRzR7FtOmy8CKpcGAKuvNSitMBySFTXIaYgf, y=AHey9bIrDsvlhDcl1zZgrArvzWpZNLdinzVT3vsIdV-On_HBd9d9KMww_RzbW2ybSW7yYeNCgWhTkt5LsGW7wkLR, crv=P-521}
+2020-05-14 21:19:00,737  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.RsaJsonWebKey{kty=RSA, kid=OTOKp2IPHQZJSC_StxUntQ_zfHM, use=enc, n=kuQfXAoWfJ5ffx6JTBsAO2ntEF82wsyOzFoVREDXr0elvRp0hIjvc9WE6_0wGFVV7sRQowHBvW1y2pyXKROs4C5YbQv0ebzm-9VYDRfBCPkdgY10eAh46klQC8XTfldhWu_qEme3cH2uXhdZa4bvhhwQJr0RyqutRVwuGgMFDYp6cw1k4YPe3rsPjqdaEYqqgFpgDyPEPyWeUux4l_LUY9G-AOAodJgqgvC1vMh8N4a_6PvO1fjBOJ6wxwvtWcP1eoD9Zrr_YBLUaq0AclVShKAdyWkPn5Skj_8X_M3GUlNi4zU4e0pokXCOTSkOVlgaKqPHiD3H-YsKhm7b2bGI5w, e=AQAB}
+2020-05-14 21:19:00,738  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=JdFSuBYPVE-5qzo97dnSCSqFgYI, use=enc, x=jh_BowAHKISrrdaHVMnpfBH5dNI-8zGK0Z8sOULst4o, y=L2KHxmeO2CA5ckbXOl-KslLqoY2DFWhKxGB5HeOd_EI, crv=P-256}
+2020-05-14 21:19:00,738  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=kvSj99eMk9hoOSuL7MkJw_1kQL0, use=enc, x=cVIdWGYiqabopbxeT6gx5Irh9z9rT1rcmG0v6HCalp8WluKeCECMVQLKl9RbtwFv, y=0o5ABgjCg7jpda0JJiU-I7fCZXvGDtcejLpfEIt24srgmyHHD7dq4JO27cPaMtr0, crv=P-384}
+2020-05-14 21:19:00,739  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=GdiIj88sORcNOL-_CesYxkjpr4E, use=enc, x=AWudxzdwT_30Tv5GrCA9nrNxNJgoJWgEWVxJs0hKMtK8nrbt7Dbpp1MX0X7z-NAuZgCsHSoSysxMG3GDxk6NbE_M, y=AVHPxV7e-IErMAwZmNKMZOgCSwcF_oi1hfIaKFomc-0_do962DXmoD1CMjCEPQLTPuop702yyZe_OhqvLXe27dTD, crv=P-521}
+2020-05-14 21:19:01,010  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.RsaJsonWebKey{kty=RSA, kid=RIR_g5MisjYJWNS9xl2IiMCzg-Y, use=sig, n=rz0QLZUZIR9TvQW5SeNgdgXbc2Sh0c9ZJhlxRKMIzfAso5vct_Nj9-mCtJQEVwmtKSrRwya4fImsNjXOtgcmgnyADQy1dflyvD6qRGHG31KQe1L5j2kEXpWIi4VL7_la6yy3fsnDuvac6_hLgSLej11ziY51J8zFvhHfn3A80WfhhOMe8fmYNVcuqMtTcJ_jwVg_vtzfIeKV885Raqrqqaemuu7enMul1KBf0JFXkMsQ3ft3_WCJ2WZ1D7MNINfiJom_GPH29NbIXwce4FS0c5LvzJl8y4tVreTI1_SYWgYiP137QYyOvlOaCXZLpz039ROUcOvvlYgD9LAo_RamCw, e=AQAB}
+2020-05-14 21:19:01,011  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=-HTY1kZt7tRy0MzGeLn21SuOVpo, use=sig, x=0fHo1BrhC_J6zi5qnL1zU7ATSc48s0vdqL6igozNuv8, y=-SS_rmxnE5bEMJa1Ptvk9wTh-I8qGxQjL0hyvdLmT1k, crv=P-256}
+2020-05-14 21:19:01,011  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=0sF-lCRbbc3YcvCa-LslFkYltsY, use=sig, x=Sdrqg-zQa8ftnDyofcLedNd7KWjKIXEmYRZsltzYiiKi27c4NF6C0hCZ0_al-wXm, y=DXv2dcfUR-cYPkTZlgrVotPTWkcZE-YALrJvuZEWtDzYgDLc6siBhV7tKIIfKyXz, crv=P-384}
+2020-05-14 21:19:01,012  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=xUVVHVpDOWGq-6SKazW2_J79mcs, use=sig, x=ABarCQj-c8UktcyCttileJWYeTaoXpEJX3oNAxMFpzkN2w-QeOpvS420ngkJAYupKkRLv9d7rcT414Q9LijGH-Le, y=APUV3H6BQKFsHL2vCKV042czN6EHIpwxGne96oeJ2pjGFqS2rl5JtsC4-rm2KW7F7jL1dS52mjh30LRLAZIpTqE5, crv=P-521}
+2020-05-14 21:19:01,013  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.RsaJsonWebKey{kty=RSA, kid=nxOvHajLUDscPbKD-ot18Bo-9t4, use=enc, n=jeBQqen1tF8CzE4cyxSf2DgDlOMIEtAZuvV2jlneR6h6JUMTZc8k9R6LZLy97aXMnsePOvnUVRKJ3fITbz3z65UM4XvD6a4UBkF4P7ifSvltdWGYOS7dIsV_zhhP7-in_O6LDC9D5ZUr-nLNheb9GgLcb0MUQkxZk4ZDmpZlz4-H_RdbA_lp0sU4y6guYah3V-mD2EJT92ExsGTid4HM6Z4novcP4Vd_JKjK9kY3gU6GEc7wV2qrT3X0efRj1och-dZPnyqURgjm3CzH5aTjN3QsishiTGzYn7TFTNupEa72oC6h9bdy0w6wZuOHJGnCRk1kp3J5y7hT7Q87wDMr4w, e=AQAB}
+2020-05-14 21:19:01,013  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=ccDv2F4fQzNjsHKitVCZr5szHI0, use=enc, x=HEU7wVPFtY13Kk4E_xNaZ-vn-wFZLMDM1kLnn-3idcY, y=BkwpAkv034u5CZ8D6eGV0fdJ91CK--phC7-JT72epmY, crv=P-256}
+2020-05-14 21:19:01,014  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=dqAdrKsS2anxqGCNDxCqx-CA4kI, use=enc, x=rKi3pIGwANkSAtTl5au9B5nfJOCp4GZCP4_YyIVdmzTdVoBDOBenveX27_wEWZHG, y=SL3zlojMv7Zj8Xvp6i90vkQDx1PfEyhQma68tuHu1qkA4cZt_h8PxmOQrxoan7q3, crv=P-384}
+2020-05-14 21:19:01,015  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=Q1GErPZQuDyFf6-3rvNVr9xS1FY, use=enc, x=AdpE9y22Y3kj3g0x41T1pTNE7uf4Mi2IKWjrgq7m3qFMByMcpp22Nna60TA9LwSICCpgzaXIICG3YrL2Hw32Q1C1, y=ATTQCAkNkvP3hGx8YkBZG2hsf7KboGEK1ZlPCLH3Yp_vbQxyuu7loraNn2XZ9cZv0WGI4zmj4-vw-BS0qcG9apF_, crv=P-521}
+2020-05-14 21:19:01,035  INFO  [org.sourceid.websso.servlet.InitServlet] Starting org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$3@1fb2eec at interval of 5000ms as indicated by ConfigArchiveDeployTimerInterval in timer-intervals.xml
+2020-05-14 21:19:01,045  INFO  [org.sourceid.websso.servlet.InitServlet] Starting com.pingidentity.crypto.ExpirationNotifier@6da54910 at interval of 43200000ms as indicated by CertExpirationNotifierTimerInterval in timer-intervals.xml
+2020-05-14 21:19:01,099  INFO  [org.sourceid.websso.servlet.InitServlet] Starting org.sourceid.saml20.domain.util.api.filesystem.ConnectionImporter@61394494 at interval of 5000ms as indicated by ConnectionImportTimerInterval in timer-intervals.xml
+2020-05-14 21:19:01,278  INFO  [org.sourceid.util.license.PingLicense] License loaded:
+License Edition: Free
+License ID: 1680675
+Issue Date: 5/9/20
+Product: PingFederate
+Version: 10.0
+Issued To: unspecified
+Org: unspecified
+Node Limit: unlimited
+Connection Limit: unlimited
+Expiration Date: 6/8/20
+Outbound Provisioning: true
+WS-Trust STS: true
+OAuth: true
+Generator: WebAPI
+2020-05-14 21:19:01,291  INFO  [org.sourceid.util.license.Watcher] Server licensing status is now: WARN
+2020-05-14 21:19:01,401  WARN  [org.sourceid.util.license.NotificationSupport$1] You are approaching the limit for your PingFederate license.
+License Edition: Free
+License ID: 1680675
+Issue Date: 5/9/20
+Product: PingFederate
+Version: 10.0
+Issued To: unspecified
+Org: unspecified
+Node Limit: unlimited
+Connection Limit: unlimited
+Expiration Date: 6/8/20
+Outbound Provisioning: true
+WS-Trust STS: true
+OAuth: true
+Generator: WebAPI
+2020-05-14 21:19:01,413  INFO  [org.sourceid.websso.servlet.InitServlet] Starting org.sourceid.oauth20.token.AccessGrantCleaner@175c5c3a at interval of 86400000ms as indicated by AccessGrantCleanerInterval in timer-intervals.xml
+2020-05-14 21:19:02,058  INFO  [com.pingidentity.jmx.JmxBootstrapper] isActive=false and registry port is 1099
+2020-05-14 21:19:02,058  INFO  [com.pingidentity.jmx.JmxBootstrapper] Not starting Jmx Connector Server because rmi.registry.port config field is not set or service not active in application auth.
+2020-05-14 21:19:02,540  INFO  [org.sourceid.saml20.domain.util.InitMigrationUtil] No default SMTP notification publisher created. No previous SMTP settings (Email Configuration) exist.
+2020-05-14 21:19:02,657  INFO  [org.sourceid.websso.servlet.DeferredInitServlet] Initializing...
+2020-05-14 21:19:02,657  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@740b6628{/,file:///opt/out/instance/work/jetty-0.0.0.0-9031-pf-runtime.war-_-any-8350119086891386198.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/pf-runtime.war}
+2020-05-14 21:19:02,674  INFO  [org.eclipse.jetty.server.RequestLogWriter] Opened /opt/out/instance/log/2020_05_14.request.log
+2020-05-14 21:19:02,684  INFO  [org.eclipse.jetty.deploy.providers.ScanningAppProvider] Deployment monitor [file:///opt/out/instance/server/default/deploy/] at interval 1
+2020-05-14 21:19:11,219  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=1160ms
+2020-05-14 21:19:11,253  INFO  [org.eclipse.jetty.server.handler.ContextHandler._OAuthPlayground] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:19:13,405  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@48c5698{/OAuthPlayground,/OAuthPlayground,file:///opt/out/instance/work/jetty-0.0.0.0-9031-OAuthPlayground.war-_OAuthPlayground-any-1416162854277371219.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/OAuthPlayground.war}
+2020-05-14 21:19:13,998  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=8ms
+2020-05-14 21:19:14,008  INFO  [org.eclipse.jetty.server.handler.ContextHandler._pingid_web] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:19:14,028  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@5cfa2ac5{PingID Offline Authentication,/pingid-web,file:///opt/out/instance/work/jetty-0.0.0.0-9031-pingid-web.war-_pingid-web-any-9164886897491166089.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/pingid-web.war}
+2020-05-14 21:19:20,624  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=2756ms
+2020-05-14 21:19:20,633  INFO  [org.eclipse.jetty.server.handler.ContextHandler._pf_scim] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:19:20,793  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@5be69f7e{PF-SCIM,/pf-scim,file:///opt/out/instance/work/jetty-0.0.0.0-9031-pf-scim.war-_pf-scim-any-13385586041165037752.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/pf-scim.war}
+2020-05-14 21:19:21,034  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=5ms
+2020-05-14 21:19:21,046  INFO  [org.eclipse.jetty.server.handler.ContextHandler._provisioner_runtime] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:19:21,104  INFO  [org.eclipse.jetty.server.handler.ContextHandler._provisioner_runtime] Initializing Spring root WebApplicationContext
+2020-05-14 21:19:21,104  INFO  [org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization started
+2020-05-14 21:19:21,245  INFO  [org.springframework.web.context.support.XmlWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Thu May 14 21:19:21 GMT 2020]; root of context hierarchy
+2020-05-14 21:19:21,346  INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2020-05-14 21:19:21,723  INFO  [org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 618 ms
+2020-05-14 21:19:21,731  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@5d9d8e46{Provisioner,/provisioner-runtime,file:///opt/out/instance/work/jetty-0.0.0.0-9031-provisioner-runtime.war-_provisioner-runtime-any-17595808121492789070.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/provisioner-runtime.war}
+2020-05-14 21:19:24,108  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=870ms
+2020-05-14 21:19:24,175  INFO  [org.eclipse.jetty.server.handler.ContextHandler._pf_ws] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:19:24,306  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@65b5b5ed{PF Runtime Webservices,/pf-ws,file:///opt/out/instance/work/jetty-0.0.0.0-9031-pf-ws.war-_pf-ws-any-15281107271023616515.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/pf-ws.war}
+2020-05-14 21:19:24,315  INFO  [com.pingidentity.appserver.jetty.server.connector.ServerConnector] Starting listener class com.pingidentity.appserver.jetty.server.connector.ServerConnector 9031
+2020-05-14 21:19:24,478  INFO  [org.eclipse.jetty.util.ssl.SslContextFactory] x509=X509@443dae2(vtcm75en83g6v1r87ytm7lihi,h=[localhost],w=[]) for RuntimeSslContextFactory@7b0525a8[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:24,739  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA enabled for RuntimeSslContextFactory@7b0525a8[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:24,739  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_RSA_WITH_AES_128_GCM_SHA256 enabled for RuntimeSslContextFactory@7b0525a8[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:24,740  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_RSA_WITH_AES_128_CBC_SHA256 enabled for RuntimeSslContextFactory@7b0525a8[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:24,740  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDH_RSA_WITH_AES_128_CBC_SHA enabled for RuntimeSslContextFactory@7b0525a8[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:24,740  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA enabled for RuntimeSslContextFactory@7b0525a8[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:24,775  INFO  [org.eclipse.jetty.server.AbstractConnector] Started ServerConnector@481558ce{SSL,[ssl, http/1.1]}{0.0.0.0:9031}
+2020-05-14 21:19:24,777  INFO  [com.pingidentity.appserver.jetty.server.connector.ServerConnector] Not starting listener class com.pingidentity.appserver.jetty.server.connector.ServerConnector because port was set to -1
+2020-05-14 21:19:24,778  INFO  [com.pingidentity.appserver.jetty.server.connector.ServerConnector] Not starting listener class com.pingidentity.appserver.jetty.server.connector.ServerConnector because port was set to -1
+2020-05-14 21:19:24,778  INFO  [org.eclipse.jetty.server.Server] Started @36599ms
+2020-05-14 21:19:24,778  INFO  [org.eclipse.jetty.server.Server] jetty-9.4.18.v20190429patch5; built: 2020-01-22T23:47:18.414Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-LTS
+2020-05-14 21:19:24,784  INFO  [org.eclipse.jetty.server.RequestLogWriter] Opened /opt/out/instance/log/2020_05_14.request2.log
+2020-05-14 21:19:24,785  INFO  [org.eclipse.jetty.deploy.providers.ScanningAppProvider] Deployment monitor [file:///opt/out/instance/server/default/deploy2/] at interval 1
+2020-05-14 21:19:43,085  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter PARTNER
+2020-05-14 21:19:43,088  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter TARGET
+2020-05-14 21:19:43,088  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter Binding
+2020-05-14 21:19:43,088  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter RequestedSPNameQualifier
+2020-05-14 21:19:43,089  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter PartnerSpId
+2020-05-14 21:19:43,094  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 3 validators for parameter SourceResource
+2020-05-14 21:19:43,097  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter SpSessionAuthnAdapterId
+2020-05-14 21:19:43,098  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 3 validators for parameter InErrorResource
+2020-05-14 21:19:43,100  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter RequestedACSIdx
+2020-05-14 21:19:43,100  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter ForceAuthn
+2020-05-14 21:19:43,101  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter IsPassive
+2020-05-14 21:19:43,101  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter RequestedBinding
+2020-05-14 21:19:43,106  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter RequestedFormat
+2020-05-14 21:19:43,107  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter TargetResource
+2020-05-14 21:19:43,108  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter idp
+2020-05-14 21:19:43,110  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter TokenProcessorId
+2020-05-14 21:19:43,112  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter IdpAdapterId
+2020-05-14 21:19:43,113  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter AllowCreate
+2020-05-14 21:19:43,113  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter Domain
+2020-05-14 21:19:43,114  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter PartnerIdpId
+2020-05-14 21:19:43,114  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter wtrealm
+2020-05-14 21:19:53,952  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=3057ms
+2020-05-14 21:19:53,968  INFO  [org.eclipse.jetty.server.handler.ContextHandler.pf_admin_api] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:19:54,745  INFO  [com.pingidentity.pf.admin.rest.servlet.SwaggerConfig] The external facing admin API URL is https://localhost:9999/pf-admin-api/v1
+2020-05-14 21:19:54,777  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@2ab7f649{PF ADMIN CONSOLE API,/pf-admin-api,file:///opt/out/instance/work/jetty-0.0.0.0-9999-pf-admin-api.war-_pf-admin-api-any-14495544442789331501.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy2/pf-admin-api.war}
+2020-05-14 21:19:55,099  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=81ms
+2020-05-14 21:19:55,108  INFO  [org.eclipse.jetty.server.handler.ContextHandler.pf_mgmt_ws] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:19:55,148  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@7c6ab057{PF,/pf-mgmt-ws,file:///opt/out/instance/work/jetty-0.0.0.0-9999-pf-mgmt-ws.war-_pf-mgmt-ws-any-9301802802661727818.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy2/pf-mgmt-ws.war}
+2020-05-14 21:19:57,509  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=6ms
+2020-05-14 21:19:57,526  INFO  [org.eclipse.jetty.server.handler.ContextHandler.pingfederate] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:19:57,936  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@53917c92{HuronPeak,/pingfederate,file:///opt/out/instance/work/jetty-0.0.0.0-9999-pingfederate.war-_pingfederate-any-14105881829055702710.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy2/pingfederate.war}
+2020-05-14 21:19:57,941  INFO  [com.pingidentity.appserver.jetty.server.connector.ServerConnector] Starting listener class com.pingidentity.appserver.jetty.server.connector.ServerConnector 9999
+2020-05-14 21:19:58,005  INFO  [org.eclipse.jetty.util.ssl.SslContextFactory] x509=X509@4fcedf83(vtcm75en83g6v1r87ytm7lihi,h=[localhost],w=[]) for AdminSslContextFactory@24a7725d[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:58,090  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA enabled for AdminSslContextFactory@24a7725d[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:58,090  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_RSA_WITH_AES_128_GCM_SHA256 enabled for AdminSslContextFactory@24a7725d[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:58,090  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_RSA_WITH_AES_128_CBC_SHA256 enabled for AdminSslContextFactory@24a7725d[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:58,090  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDH_RSA_WITH_AES_128_CBC_SHA enabled for AdminSslContextFactory@24a7725d[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:58,090  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA enabled for AdminSslContextFactory@24a7725d[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:19:58,091  INFO  [org.eclipse.jetty.server.AbstractConnector] Started ServerConnector@5707f613{SSL,[ssl, http/1.1]}{0.0.0.0:9999}
+2020-05-14 21:19:58,092  INFO  [org.eclipse.jetty.server.Server] Started @69947ms
+2020-05-14 21:20:33,072  INFO  [org.sourceid.saml20.domain.mgmt.AbstractAuthManager] pf.console.authentication Authentication: native
+2020-05-14 21:20:42,969  INFO  [com.pingidentity.fsm.SessionTimeout] Application '/pingfederate' session timeout is 30 minutes.

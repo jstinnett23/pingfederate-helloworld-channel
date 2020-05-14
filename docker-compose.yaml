@@ -20,8 +20,8 @@ services:
   pingfederate:
     image: pingidentity/pingfederate:edge
     environment:
-      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
-      - SERVER_PROFILE_PATH=getting-started/pingfederate
+      - SERVER_PROFILE_URL=https://github.com/jstinnett23/pingfederate-sso-salesforce
+      - SERVER_PROFILE_PATH=pingfederate
     env_file:
       - ~/.pingidentity/devops
     ports:
@@ -31,7 +31,7 @@ services:
       - pingnet
     # volumes:
     #   - ./pingfederate:/opt/in
-    #   - ./output:/opt/out
+    #   - ./local:/opt/out
                     
 networks:
     pingnet:
