@@ -167,3 +167,549 @@ Generator: WebAPI
 2020-05-14 21:19:58,092  INFO  [org.eclipse.jetty.server.Server] Started @69947ms
 2020-05-14 21:20:33,072  INFO  [org.sourceid.saml20.domain.mgmt.AbstractAuthManager] pf.console.authentication Authentication: native
 2020-05-14 21:20:42,969  INFO  [com.pingidentity.fsm.SessionTimeout] Application '/pingfederate' session timeout is 30 minutes.
+2020-05-14 21:29:41,055  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@48c5698{/OAuthPlayground,/OAuthPlayground,null,UNAVAILABLE}{/opt/out/instance/server/default/deploy/OAuthPlayground.war}
+2020-05-14 21:29:41,060  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@5cfa2ac5{PingID Offline Authentication,/pingid-web,null,UNAVAILABLE}{/opt/out/instance/server/default/deploy/pingid-web.war}
+2020-05-14 21:29:41,065  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@5be69f7e{PF-SCIM,/pf-scim,null,UNAVAILABLE}{/opt/out/instance/server/default/deploy/pf-scim.war}
+2020-05-14 21:29:41,067  INFO  [org.eclipse.jetty.server.handler.ContextHandler._provisioner_runtime] Closing Spring root WebApplicationContext
+2020-05-14 21:29:41,067  INFO  [org.springframework.web.context.support.XmlWebApplicationContext] Closing Root WebApplicationContext: startup date [Thu May 14 21:19:21 GMT 2020]; root of context hierarchy
+2020-05-14 21:29:41,073  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@5d9d8e46{Provisioner,/provisioner-runtime,null,UNAVAILABLE}{/opt/out/instance/server/default/deploy/provisioner-runtime.war}
+2020-05-14 21:29:41,077  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@65b5b5ed{PF Runtime Webservices,/pf-ws,null,UNAVAILABLE}{/opt/out/instance/server/default/deploy/pf-ws.war}
+2020-05-14 21:29:41,468  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@2ab7f649{PF ADMIN CONSOLE API,/pf-admin-api,null,UNAVAILABLE}{/opt/out/instance/server/default/deploy2/pf-admin-api.war}
+2020-05-14 21:29:41,472  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@7c6ab057{PF,/pf-mgmt-ws,null,UNAVAILABLE}{/opt/out/instance/server/default/deploy2/pf-mgmt-ws.war}
+2020-05-14 21:29:41,479  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@53917c92{HuronPeak,/pingfederate,null,UNAVAILABLE}{/opt/out/instance/server/default/deploy2/pingfederate.war}
+2020-05-14 21:30:01,250  WARN  [org.sourceid.util.license.PingLicense] 
+**********************************************************
+No license found for this server (/opt/out/instance/server/default/conf/pingfederate.lic)
+You do not have a valid license configured. To obtain a valid license, please contact your vendor's Customer Support.
+**********************************************************
+2020-05-14 21:30:01,250  INFO  [org.sourceid.util.license.Watcher] Server licensing status is now: OK
+2020-05-14 21:30:01,252  ERROR [org.sourceid.util.license.Watcher] Unexpected problem in timed task.
+org.sourceid.config.ConfigurationException: Input file does not exist: /opt/out/instance/server/default/data/sourceid-saml2-local-metadata.xml
+	at com.pingidentity.configservice.impl.FileStreamLoader.getInputStream(FileStreamLoader.java:49) ~[pf-protocolengine.jar:?]
+	at com.pingidentity.configservice.impl.FileStreamLoader.getInputStream(FileStreamLoader.java:38) ~[pf-protocolengine.jar:?]
+	at $StreamLoader_172150dec1f.getInputStream($StreamLoader_172150dec1f.java) ~[?:?]
+	at com.pingidentity.configservice.impl.StreamXmlLoader.loadRawXml(StreamXmlLoader.java:56) ~[pf-protocolengine.jar:?]
+	at com.pingidentity.configservice.impl.AbstractXmlLoader.load(AbstractXmlLoader.java:48) ~[pf-protocolengine.jar:?]
+	at $XmlLoader_172150dec1d.load($XmlLoader_172150dec1d.java) ~[?:?]
+	at org.sourceid.saml20.metadata.local.impl.MetadataLocalXmlLoaderImpl.reload(MetadataLocalXmlLoaderImpl.java:126) ~[pf-protocolengine.jar:?]
+	at $MetadataLocal_172150dec31.reload($MetadataLocal_172150dec31.java) ~[?:?]
+	at org.sourceid.util.license.LicenseManager.getLicense(LicenseManager.java:120) ~[pf-protocolengine.jar:?]
+	at org.sourceid.util.license.Watcher.doTask(Watcher.java:21) ~[pf-protocolengine.jar:?]
+	at com.pingidentity.common.util.TimerTaskBase.run(TimerTaskBase.java:18) ~[pf-protocolengine.jar:?]
+	at java.util.TimerThread.mainLoop(Timer.java:556) ~[?:?]
+	at java.util.TimerThread.run(Timer.java:506) ~[?:?]
+Caused by: java.io.FileNotFoundException: /opt/out/instance/server/default/data/sourceid-saml2-local-metadata.xml (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at com.pingidentity.configservice.impl.FileStreamLoader.getInputStream(FileStreamLoader.java:45) ~[pf-protocolengine.jar:?]
+	... 12 more
+2020-05-14 21:30:07,268 tid:w1BioMgCYoqtz5v7-mV9jgD2-eM WARN  [org.sourceid.util.license.PingLicense] 
+**********************************************************
+No license file was found.
+You do not have a valid license configured. To obtain a valid license, please contact your vendor's Customer Support.
+**********************************************************
+2020-05-14 21:30:07,270 tid:w1BioMgCYoqtz5v7-mV9jgD2-eM ERROR [org.sourceid.common.ResponseTemplateRenderer] Cannot find template /opt/out/instance/server/default/conf/template/http.error.page.template.html
+2020-05-14 21:30:07,271  WARN  [org.eclipse.jetty.server.HttpChannel] /pf/heartbeat.ping com.pingidentity.sdk.template.TemplateRendererUtilException
+2020-05-14 21:30:07,276  ERROR [org.sourceid.servlet.ErrorServlet] Top level error (ref#3505-9669): com.pingidentity.sdk.template.TemplateRendererUtilException
+com.pingidentity.sdk.template.TemplateRendererUtilException: null
+	at com.pingidentity.sdk.template.TemplateRendererUtil.render(TemplateRendererUtil.java:48) ~[pf-protocolengine.jar:?]
+	at com.pingidentity.appserver.jetty.PFRuntimeErrorHandler.writeErrorPage(PFRuntimeErrorHandler.java:128) ~[pf-appserver-ext.jar:?]
+	at com.pingidentity.appserver.jetty.PFRuntimeErrorHandler.handle(PFRuntimeErrorHandler.java:114) ~[pf-appserver-ext.jar:?]
+	at org.eclipse.jetty.server.Response.sendError(Response.java:792) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.Response.sendError(Response.java:727) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at javax.servlet.http.HttpServletResponseWrapper.sendError(HttpServletResponseWrapper.java:167) ~[servlet-api-3.1.jar:3.1.0]
+	at org.sourceid.servlet.HttpServletRespProxy.sendError(HttpServletRespProxy.java:127) ~[pf-protocolengine.jar:?]
+	at org.sourceid.websso.servlet.EnforcerServletBase.checkProcess(EnforcerServletBase.java:102) ~[pf-protocolengine.jar:?]
+	at org.sourceid.websso.servlet.EnforcerServletBase.doGet(EnforcerServletBase.java:155) ~[pf-protocolengine.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[servlet-api-3.1.jar:3.1.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[servlet-api-3.1.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.NoCacheFilter.doFilter(NoCacheFilter.java:53) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at com.pingidentity.common.util.access.ExecutionContextFilter.doFilter(ExecutionContextFilter.java:51) ~[pf-commons.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.HttpRequestStatisticsFilter.doFilter(HttpRequestStatisticsFilter.java:50) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.HttpRequestParameterFilter.doFilter(HttpRequestParameterFilter.java:43) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.HttpRequestHeaderFilter.doFilter(HttpRequestHeaderFilter.java:40) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.CrossOriginFilter.doFilter(CrossOriginFilter.java:134) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.ResponseHeaderFilter.setResponseHeaders(ResponseHeaderFilter.java:76) ~[pf-protocolengine.jar:?]
+	at org.sourceid.websso.servlet.ResponseHeaderRuntimeFilter.doFilter(ResponseHeaderRuntimeFilter.java:20) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.websso.servlet.ProxyFilter.doFilter(ProxyFilter.java:34) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) ~[jetty-security-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1700) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1667) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:174) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.Server.handle(Server.java:505) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.onFillable(SslConnection.java:427) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillable(SslConnection.java:321) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection$2.succeeded(SslConnection.java:159) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.sourceid.common.ResponseTemplateRendererException: Cannot find template /opt/out/instance/server/default/conf/template/http.error.page.template.html
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:157) ~[pf-protocolengine.jar:?]
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:105) ~[pf-protocolengine.jar:?]
+	at com.pingidentity.sdk.template.TemplateRendererUtil.render(TemplateRendererUtil.java:44) ~[pf-protocolengine.jar:?]
+	... 71 more
+Caused by: org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'http.error.page.template.html'
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.loadResource(ResourceManagerImpl.java:483) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.getResource(ResourceManagerImpl.java:354) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.getResource(ResourceManagerImpl.java:329) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1400) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.RuntimeSingleton.getTemplate(RuntimeSingleton.java:326) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.app.Velocity.getTemplate(Velocity.java:404) ~[velocity.jar:1.6.4]
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:143) ~[pf-protocolengine.jar:?]
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:105) ~[pf-protocolengine.jar:?]
+	at com.pingidentity.sdk.template.TemplateRendererUtil.render(TemplateRendererUtil.java:44) ~[pf-protocolengine.jar:?]
+	... 71 more
+2020-05-14 21:30:07,277  ERROR [org.sourceid.common.ResponseTemplateRenderer] Cannot find template /opt/out/instance/server/default/conf/template/general.error.page.template.html
+2020-05-14 21:30:07,277  ERROR [org.sourceid.servlet.ErrorServlet] Problem rendering error page template general.error.page.template.html with parms: {exception=com.pingidentity.sdk.template.TemplateRendererUtilException, status_code=500, REQUEST_TIMESTAMP=1589491807263, locale=en_US, HttpServletRequest=Request(GET https://localhost:9031/error)@6045b029, referenceNumber=3505-9669, utils=org.sourceid.common.VelocityTemplateUtils@302d7467, ERROR=true, ssl_session=Session(1589491807257|TLS_AES_128_GCM_SHA256), value=zHFtmAqQZ7er9Pv8UjoJhJ, escape=com.pingidentity.common.util.EscapeUtils@22a7ad84, PingFedBaseURL=https://localhost:9031/, error_page=/error, servlet_path=/pf/heartbeat.ping, context_path=, HttpServletResponse=HTTP/1.1 500 
+Set-Cookie: PF=zHFtmAqQZ7er9Pv8UjoJhJ;Path=/;Secure;HttpOnly;SameSite=None
+Cache-Control: no-cache, no-store
+
+, message=com.pingidentity.sdk.template.TemplateRendererUtilException, ssl_session_id=7d3a07E01fE21775Ef369dA36c57F18d22C69240972a597e5eEd85B198Bf18C5, CurrentPingFedBaseURL=https://localhost:9031/, TrackingId=tid:w1BioMgCYoqtz5v7-mV9jgD2-eM, request_uri=/pf/heartbeat.ping, cipher_suite=TLS_AES_128_GCM_SHA256, exception_type=class com.pingidentity.sdk.template.TemplateRendererUtilException, servlet_name=ProprietaryController, templateMessages=com.pingidentity.sdk.locale.LanguagePackMessages@616bc9c7, key_size=0}
+org.sourceid.common.ResponseTemplateRendererException: Cannot find template /opt/out/instance/server/default/conf/template/general.error.page.template.html
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:157) ~[pf-protocolengine.jar:?]
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:105) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.ErrorServlet.doit(ErrorServlet.java:93) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.ErrorServlet.doGet(ErrorServlet.java:103) ~[pf-protocolengine.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[servlet-api-3.1.jar:3.1.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[servlet-api-3.1.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:865) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:566) ~[jetty-security-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1700) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1667) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:227) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.Dispatcher.error(Dispatcher.java:86) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at com.pingidentity.appserver.jetty.PFRuntimeErrorHandler.handle(PFRuntimeErrorHandler.java:94) ~[pf-appserver-ext.jar:?]
+	at org.eclipse.jetty.server.Response.sendError(Response.java:792) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doError(AbstractHandler.java:100) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1339) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1667) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:174) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.Server.handle(Server.java:505) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:425) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.onFillable(SslConnection.java:427) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillable(SslConnection.java:321) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection$2.succeeded(SslConnection.java:159) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'general.error.page.template.html'
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.loadResource(ResourceManagerImpl.java:483) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.getResource(ResourceManagerImpl.java:354) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1400) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.RuntimeSingleton.getTemplate(RuntimeSingleton.java:326) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.app.Velocity.getTemplate(Velocity.java:404) ~[velocity.jar:1.6.4]
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:143) ~[pf-protocolengine.jar:?]
+	... 54 more
+2020-05-14 21:30:38,371 tid:k4Z57PedJ0nZUrLn5rwkorvqtnY ERROR [org.sourceid.common.ResponseTemplateRenderer] Cannot find template /opt/out/instance/server/default/conf/template/http.error.page.template.html
+2020-05-14 21:30:38,371  WARN  [org.eclipse.jetty.server.HttpChannel] /pf/heartbeat.ping com.pingidentity.sdk.template.TemplateRendererUtilException
+2020-05-14 21:30:38,371  ERROR [org.sourceid.servlet.ErrorServlet] Top level error (ref#8311-7252): com.pingidentity.sdk.template.TemplateRendererUtilException
+com.pingidentity.sdk.template.TemplateRendererUtilException: null
+	at com.pingidentity.sdk.template.TemplateRendererUtil.render(TemplateRendererUtil.java:48) ~[pf-protocolengine.jar:?]
+	at com.pingidentity.appserver.jetty.PFRuntimeErrorHandler.writeErrorPage(PFRuntimeErrorHandler.java:128) ~[pf-appserver-ext.jar:?]
+	at com.pingidentity.appserver.jetty.PFRuntimeErrorHandler.handle(PFRuntimeErrorHandler.java:114) ~[pf-appserver-ext.jar:?]
+	at org.eclipse.jetty.server.Response.sendError(Response.java:792) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.Response.sendError(Response.java:727) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at javax.servlet.http.HttpServletResponseWrapper.sendError(HttpServletResponseWrapper.java:167) ~[servlet-api-3.1.jar:3.1.0]
+	at org.sourceid.servlet.HttpServletRespProxy.sendError(HttpServletRespProxy.java:127) ~[pf-protocolengine.jar:?]
+	at org.sourceid.websso.servlet.EnforcerServletBase.checkProcess(EnforcerServletBase.java:102) ~[pf-protocolengine.jar:?]
+	at org.sourceid.websso.servlet.EnforcerServletBase.doGet(EnforcerServletBase.java:155) ~[pf-protocolengine.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[servlet-api-3.1.jar:3.1.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[servlet-api-3.1.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.NoCacheFilter.doFilter(NoCacheFilter.java:53) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at com.pingidentity.common.util.access.ExecutionContextFilter.doFilter(ExecutionContextFilter.java:51) ~[pf-commons.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.HttpRequestStatisticsFilter.doFilter(HttpRequestStatisticsFilter.java:50) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.HttpRequestParameterFilter.doFilter(HttpRequestParameterFilter.java:43) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.HttpRequestHeaderFilter.doFilter(HttpRequestHeaderFilter.java:40) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.CrossOriginFilter.doFilter(CrossOriginFilter.java:134) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.servlet.filter.ResponseHeaderFilter.setResponseHeaders(ResponseHeaderFilter.java:76) ~[pf-protocolengine.jar:?]
+	at org.sourceid.websso.servlet.ResponseHeaderRuntimeFilter.doFilter(ResponseHeaderRuntimeFilter.java:20) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.sourceid.websso.servlet.ProxyFilter.doFilter(ProxyFilter.java:34) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:56) ~[pf-protocolengine.jar:?]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) ~[jetty-security-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1700) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1667) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:174) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.Server.handle(Server.java:505) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.onFillable(SslConnection.java:427) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillable(SslConnection.java:321) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection$2.succeeded(SslConnection.java:159) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.sourceid.common.ResponseTemplateRendererException: Cannot find template /opt/out/instance/server/default/conf/template/http.error.page.template.html
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:157) ~[pf-protocolengine.jar:?]
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:105) ~[pf-protocolengine.jar:?]
+	at com.pingidentity.sdk.template.TemplateRendererUtil.render(TemplateRendererUtil.java:44) ~[pf-protocolengine.jar:?]
+	... 71 more
+Caused by: org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'http.error.page.template.html'
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.loadResource(ResourceManagerImpl.java:483) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.getResource(ResourceManagerImpl.java:354) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1400) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.RuntimeSingleton.getTemplate(RuntimeSingleton.java:326) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.app.Velocity.getTemplate(Velocity.java:404) ~[velocity.jar:1.6.4]
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:143) ~[pf-protocolengine.jar:?]
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:105) ~[pf-protocolengine.jar:?]
+	at com.pingidentity.sdk.template.TemplateRendererUtil.render(TemplateRendererUtil.java:44) ~[pf-protocolengine.jar:?]
+	... 71 more
+2020-05-14 21:30:38,373  ERROR [org.sourceid.common.ResponseTemplateRenderer] Cannot find template /opt/out/instance/server/default/conf/template/general.error.page.template.html
+2020-05-14 21:30:38,374  ERROR [org.sourceid.servlet.ErrorServlet] Problem rendering error page template general.error.page.template.html with parms: {exception=com.pingidentity.sdk.template.TemplateRendererUtilException, status_code=500, REQUEST_TIMESTAMP=1589491838368, locale=en_US, HttpServletRequest=Request(GET https://localhost:9031/error)@77b73e8c, referenceNumber=8311-7252, utils=org.sourceid.common.VelocityTemplateUtils@302d7467, ERROR=true, ssl_session=Session(1589491838360|TLS_AES_128_GCM_SHA256), value=lQmLpvnzoLd7wk2uYZV4BY, escape=com.pingidentity.common.util.EscapeUtils@22a7ad84, PingFedBaseURL=https://localhost:9031/, error_page=/error, servlet_path=/pf/heartbeat.ping, context_path=, HttpServletResponse=HTTP/1.1 500 
+Set-Cookie: PF=lQmLpvnzoLd7wk2uYZV4BY;Path=/;Secure;HttpOnly;SameSite=None
+Cache-Control: no-cache, no-store
+
+, message=com.pingidentity.sdk.template.TemplateRendererUtilException, ssl_session_id=C157CeDc7347Fe511d3f19Af36725c6dF1623e3a1a93Fd80CeBbAe0d123b9548, CurrentPingFedBaseURL=https://localhost:9031/, TrackingId=tid:k4Z57PedJ0nZUrLn5rwkorvqtnY, request_uri=/pf/heartbeat.ping, cipher_suite=TLS_AES_128_GCM_SHA256, exception_type=class com.pingidentity.sdk.template.TemplateRendererUtilException, servlet_name=ProprietaryController, templateMessages=com.pingidentity.sdk.locale.LanguagePackMessages@68e36673, key_size=0}
+org.sourceid.common.ResponseTemplateRendererException: Cannot find template /opt/out/instance/server/default/conf/template/general.error.page.template.html
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:157) ~[pf-protocolengine.jar:?]
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:105) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.ErrorServlet.doit(ErrorServlet.java:93) ~[pf-protocolengine.jar:?]
+	at org.sourceid.servlet.ErrorServlet.doGet(ErrorServlet.java:103) ~[pf-protocolengine.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[servlet-api-3.1.jar:3.1.0]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[servlet-api-3.1.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:865) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:566) ~[jetty-security-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1700) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1667) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:227) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.Dispatcher.error(Dispatcher.java:86) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at com.pingidentity.appserver.jetty.PFRuntimeErrorHandler.handle(PFRuntimeErrorHandler.java:94) ~[pf-appserver-ext.jar:?]
+	at org.eclipse.jetty.server.Response.sendError(Response.java:792) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doError(AbstractHandler.java:100) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1339) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480) ~[jetty-servlet-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1667) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:174) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.Server.handle(Server.java:505) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:425) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267) ~[jetty-server-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.onFillable(SslConnection.java:427) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillable(SslConnection.java:321) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ssl.SslConnection$2.succeeded(SslConnection.java:159) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117) ~[jetty-io-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804) ~[jetty-util-9.4.18.v20190429patch5.jar:9.4.18.v20190429patch5]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'general.error.page.template.html'
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.loadResource(ResourceManagerImpl.java:483) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.getResource(ResourceManagerImpl.java:354) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1400) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.runtime.RuntimeSingleton.getTemplate(RuntimeSingleton.java:326) ~[velocity.jar:1.6.4]
+	at org.apache.velocity.app.Velocity.getTemplate(Velocity.java:404) ~[velocity.jar:1.6.4]
+	at org.sourceid.common.ResponseTemplateRenderer.render(ResponseTemplateRenderer.java:143) ~[pf-protocolengine.jar:?]
+	... 54 more
+2020-05-14 21:30:57,602  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=901ms
+2020-05-14 21:30:57,608  INFO  [org.eclipse.jetty.server.handler.ContextHandler._OAuthPlayground] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:30:59,150  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@65c06534{/OAuthPlayground,/OAuthPlayground,file:///opt/out/instance/work/jetty-0.0.0.0-9031-OAuthPlayground.war-_OAuthPlayground-any-13658706688503245426.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/OAuthPlayground.war}
+2020-05-14 21:31:00,032  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=6ms
+2020-05-14 21:31:00,054  INFO  [org.eclipse.jetty.server.handler.ContextHandler._pingid_web] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:31:00,068  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@474eea7e{PingID Offline Authentication,/pingid-web,file:///opt/out/instance/work/jetty-0.0.0.0-9031-pingid-web.war-_pingid-web-any-13176391136545366158.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/pingid-web.war}
+2020-05-14 21:35:32,835  INFO  [com.pingidentity.crypto.JCEManagerBase] Using cipher suites defined in com.pingidentity.crypto.SunJCEManager.xml
+2020-05-14 21:35:33,012  INFO  [com.pingidentity.crypto.CertificateServiceImpl] RSA key size 1024 is supported
+2020-05-14 21:35:33,012  INFO  [com.pingidentity.crypto.CertificateServiceImpl] RSA key size 2048 is supported
+2020-05-14 21:35:33,012  INFO  [com.pingidentity.crypto.CertificateServiceImpl] RSA key size 4096 is supported
+2020-05-14 21:35:33,014  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA256withRSA is supported
+2020-05-14 21:35:33,014  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA384withRSA is supported
+2020-05-14 21:35:33,014  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA512withRSA is supported
+2020-05-14 21:35:33,014  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Selected 2048 as default key size for RSA
+2020-05-14 21:35:33,014  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Selected SHA256withRSA as default signature algorithm for RSA
+2020-05-14 21:35:33,045  INFO  [com.pingidentity.crypto.CertificateServiceImpl] EC key size 256 is supported
+2020-05-14 21:35:33,045  INFO  [com.pingidentity.crypto.CertificateServiceImpl] EC key size 384 is supported
+2020-05-14 21:35:33,046  INFO  [com.pingidentity.crypto.CertificateServiceImpl] EC key size 521 is supported
+2020-05-14 21:35:33,047  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA256withECDSA is supported
+2020-05-14 21:35:33,048  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA384withECDSA is supported
+2020-05-14 21:35:33,049  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Signature algorithm SHA512withECDSA is supported
+2020-05-14 21:35:33,049  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Selected 256 as default key size for EC
+2020-05-14 21:35:33,049  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Selected SHA256withECDSA as default signature algorithm for EC
+2020-05-14 21:35:33,520  INFO  [com.pingidentity.crypto.CertificateServiceImpl] Loaded 148 trust anchors from /opt/java/lib/security/cacerts
+2020-05-14 21:35:34,609  INFO  [org.sourceid.saml20.domain.mgmt.impl.MediatorImpl] Server is standalone.
+2020-05-14 21:35:35,349  INFO  [org.sourceid.saml20.domain.mgmt.impl.DataSourceManagerImpl] Initializing JNDI lookup
+2020-05-14 21:35:35,432  INFO  [org.eclipse.jetty.util.log] Logging initialized @8688ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-05-14 21:35:35,573  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] ConnectionTimeOut 60000
+2020-05-14 21:35:35,574  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] RequestTimeOut 120000
+2020-05-14 21:35:35,574  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] VerifyHostname true
+2020-05-14 21:35:35,578  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] Shutting down the SoapHttpConnectionPoolingManager
+2020-05-14 21:35:35,578  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] SoapHttpConnectionPoolingManager shut down
+2020-05-14 21:35:38,583  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] Shutting down the SoapHttpConnectionPoolingManager
+2020-05-14 21:35:38,583  INFO  [org.sourceid.common.soap.soap11.SoapHttpConnectionPoolingManager] SoapHttpConnectionPoolingManager shut down
+2020-05-14 21:35:39,278  WARN  [org.eclipse.jetty.server.AbstractConnector] Ignoring deprecated socket close linger time
+2020-05-14 21:35:39,291  WARN  [org.eclipse.jetty.server.AbstractConnector] Ignoring deprecated socket close linger time
+2020-05-14 21:35:39,292  WARN  [org.eclipse.jetty.server.AbstractConnector] Ignoring deprecated socket close linger time
+2020-05-14 21:35:39,540  WARN  [org.eclipse.jetty.server.AbstractConnector] Ignoring deprecated socket close linger time
+2020-05-14 21:35:39,566  INFO  [org.eclipse.jetty.server.Server] jetty-9.4.18.v20190429patch5; built: 2020-01-22T23:47:18.414Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-LTS
+2020-05-14 21:35:40,458  INFO  [org.sourceid.websso.servlet.InitServlet] Initializing...
+2020-05-14 21:35:40,691  INFO  [com.pingidentity.crypto.jwk.JwkFacilitator] Using JwkFacilitator() com.pingidentity.crypto.jwk.JwkFacilitator@36224f93 with com.pingidentity.crypto.jwk.DirectJsonWebKeysAdder@1ee5632d
+2020-05-14 21:35:40,831  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=GdiIj88sORcNOL-_CesYxkjpr4E, use=enc, x=AWudxzdwT_30Tv5GrCA9nrNxNJgoJWgEWVxJs0hKMtK8nrbt7Dbpp1MX0X7z-NAuZgCsHSoSysxMG3GDxk6NbE_M, y=AVHPxV7e-IErMAwZmNKMZOgCSwcF_oi1hfIaKFomc-0_do962DXmoD1CMjCEPQLTPuop702yyZe_OhqvLXe27dTD, crv=P-521}
+2020-05-14 21:35:40,831  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=kvSj99eMk9hoOSuL7MkJw_1kQL0, use=enc, x=cVIdWGYiqabopbxeT6gx5Irh9z9rT1rcmG0v6HCalp8WluKeCECMVQLKl9RbtwFv, y=0o5ABgjCg7jpda0JJiU-I7fCZXvGDtcejLpfEIt24srgmyHHD7dq4JO27cPaMtr0, crv=P-384}
+2020-05-14 21:35:40,832  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=JdFSuBYPVE-5qzo97dnSCSqFgYI, use=enc, x=jh_BowAHKISrrdaHVMnpfBH5dNI-8zGK0Z8sOULst4o, y=L2KHxmeO2CA5ckbXOl-KslLqoY2DFWhKxGB5HeOd_EI, crv=P-256}
+2020-05-14 21:35:40,832  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.RsaJsonWebKey{kty=RSA, kid=OTOKp2IPHQZJSC_StxUntQ_zfHM, use=enc, n=kuQfXAoWfJ5ffx6JTBsAO2ntEF82wsyOzFoVREDXr0elvRp0hIjvc9WE6_0wGFVV7sRQowHBvW1y2pyXKROs4C5YbQv0ebzm-9VYDRfBCPkdgY10eAh46klQC8XTfldhWu_qEme3cH2uXhdZa4bvhhwQJr0RyqutRVwuGgMFDYp6cw1k4YPe3rsPjqdaEYqqgFpgDyPEPyWeUux4l_LUY9G-AOAodJgqgvC1vMh8N4a_6PvO1fjBOJ6wxwvtWcP1eoD9Zrr_YBLUaq0AclVShKAdyWkPn5Skj_8X_M3GUlNi4zU4e0pokXCOTSkOVlgaKqPHiD3H-YsKhm7b2bGI5w, e=AQAB}
+2020-05-14 21:35:41,217  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.RsaJsonWebKey{kty=RSA, kid=eBv415hhMnbYCedWuWC8vYWDVPA, use=sig, n=gWZAeuj-d-YD0ioVgmQT9EV6V2zAoBJYHebuakVLVVX1AaVmpK41R4LIdrwtUdIGQru42GNA_S8mcCB18LXiojBhoJFm0TdXGNOT6CCUORTl_YXolTdoBHd4HJLWOQ14BHXT8FnOpPQLpK-1bl2uf8C3wRCYfK7PIgvMjkXsiMp7OiIR5Hw8VU5LCiUBflqcKXfWg0yjPcFqXArwjBgMCLSF_FZ8X6EKwnWMPHIy3d9vvtdN5dmdRkbYsHbF0OR1kYPbW0ERh8zQI0k5IrKLhewn59jVDTIQP246FwMpJVu2wp4hKLZwivxDoDmqOONYnaSf8o9bM8hlCfQ5FLYpqQ, e=AQAB}
+2020-05-14 21:35:41,217  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=n9mA5j3UshXjE4jf0ZEeeN-pMRM, use=sig, x=B6qWKH84CJkY86Umbge5X2ZcKmyigOWtWdc2lJ_3P-I, y=LEhYTOBCInHuk0spuxBt-D10loY5PSxQq6M0fWItetY, crv=P-256}
+2020-05-14 21:35:41,217  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=dX2S9QOL_gLHdJc_x1rKAp1Qmio, use=sig, x=uaHoAzY7oXkPNzTkmXPw0EqvT1WykYL_jKIx_-TG4ZC38xVnpSVWn9XCIzaWY14a, y=Q-K9tNHzCk-RC_EOylkUF7Fe4vw8OUqYCSjCM5DBUKe1ORwUYgc-QaebeX4wADJB, crv=P-384}
+2020-05-14 21:35:41,218  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=40ALHgS57kDBRELK0gerE7BzVJY, use=sig, x=Aa5mKY9NcpnWVv90mDFQNeVauu_rjIBET8Zr8OPEvGXywASvte_iJi9Qgr27vCGtxjFOfnUztx8-EvR7_8jDrSfF, y=AfmoIG904ObWWwmyXkmxZ1fxeHY2qP8fXGSmqTadJDq1Jp1WcxVOj5wjiNaUnA7PtELw2Xe4HL4bLwdzuEVyZH8k, crv=P-521}
+2020-05-14 21:35:41,223  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.RsaJsonWebKey{kty=RSA, kid=Qvwh0bOo_LFZNB-FCl9JstOpA8A, use=enc, n=qHDufqMLY7nyUXcIsV5_DJJDu8apeO_Jctp9fcfbLfzJOW1GtD0EOd5NNPqpF0vwSXPJ2RrWx-CnOQsUEsYrIQ9Q5AGMwEvW8irWB0aBGXN_2OsL_umlBFReZZDIzU213iXH0zGrlXz75U6H9h-19MxkhSX4mpfVg_XvP6nBC7fXX4W0sN7zG19BeaVKGQ6g5hCKpPtD1Tc_qbhZdPuwJEqInR9ajK352u-Q04Em7hc56mab5W6d6uLIrk4o0pgsITAFuRcaoVPM_t7zTIh5SZdHRbcM6GhZaz_fo7gQCWlwhg7wVNXJE4pAhK6cxTuq0slrxki1OJrlGG-y-CnE_w, e=AQAB}
+2020-05-14 21:35:41,224  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=dQcSG4p1J1jFBdMVfywQlRxKZ3Q, use=enc, x=jxVQPD_Yvr41mPvR9kBOkq_nGHsgO2lj9C9F_HqKen4, y=at4qLfDIJDGb_P8A2glSWxmQO-G52psQ3PRUduSzRAI, crv=P-256}
+2020-05-14 21:35:41,224  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=zrLKOA93wzo3vzZQpwYV_fjw2Tw, use=enc, x=9Sy4cg3H8WLi2B786FYvwXd4d_rJBBH4lNbaYGbckK23rgIQkcMv7igdizUpgMBS, y=cjTprnA9MOzpmZ19epvs6UPdez90Jwlvsxm9hY03ea-iISd0HZ137jyWayKnUnRc, crv=P-384}
+2020-05-14 21:35:41,225  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=v81WitAE2DENDYmDBVQXfzVFe9o, use=enc, x=ASU1KFhH6uYRaQ4-z9gaDXUQW55nTRszl0RawMDRNqSURA0iGwEuX6NWtCP5dQPt6L7gJ9ycyb9I9dzz9nT7Zy2b, y=AbehesEkAwYbxo2Z9_ouXsawGVIEh1O2lASo7zDdp6-vN7-o6BXsIzoALjS5ulIOfF5Hui_pQTGqpwkFHws2e2At, crv=P-521}
+2020-05-14 21:35:41,541  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.RsaJsonWebKey{kty=RSA, kid=C0TnDUkcWmeysideAa4i-FYYNkU, use=sig, n=7l9P7xnbzr4_xHGceMMr0XSJxryDvE4-cMjBgpU0nhAvRo1iyb5gPDLHRxxdjCDd6YJ7YM6esPwPiQOKm7UoRJ1uK83az7X0kotQfMzr0yCUDrb8c3Iz6nkhVY7JiSjYOX0G_Yeas9N0kj5ED2Nz9pxwDH9n-rs2L_GJxd41Y_usOXv2uNkG7sI2b11z3PVVL4rgykIY4v3kz26c29B5Y1RAJmYbomqETfst2EMLqF29sxLgkwSn7gbH8PBCh9ExKunm8yrnovK2qXnxLfsGYuenM4hJVWh-US4uS2zbSH5Om9WrW2-p-_GPtBaY_v9zUi9KGjcxXL48U5XdKLOMsQ, e=AQAB}
+2020-05-14 21:35:41,542  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=lJCJ7F_JqHdmlPh4EyISWsndzpk, use=sig, x=b4S5Wga7k6Dg6euQyQPcSClpV50F4cmH85r39BeQUy0, y=sHz0yQy52JmeAIdkqVdNYhfT6JQeN-wNK5wCMuFpV4g, crv=P-256}
+2020-05-14 21:35:41,542  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=P6lltwQuJNMY2mMSMkx9-OTUZKw, use=sig, x=pxqmh6isU-OMqVrU3fbHTxWOwIq8IHYxg8M9_Qci_jHugvgysZqYy4GDh1zYjnqP, y=PpOdd43HZzbOWQTcaqv2xrOgjzbQlBcuE1f9CUL9I3pcnoBDYHKz68fUh1Vam_Y9, crv=P-384}
+2020-05-14 21:35:41,543  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=Zi9tDiWYA1p2mx2F2F97xQOXPpo, use=sig, x=AW3y0OvlY817KctskKgP7GI6OCs-2O0QfYrLfiTvhtNUUFGXsNWF7B7w1KepvtQrLdEzVLYg-58GXyfuhz1tCdm-, y=ASgXYnb-XRL0LeKHVu4BpGV75qaFTeIlNwI2ed09678m7SjW8J1q2jxDbD2enJMgAWkY3HYlvxQLI134Xqb1sd2A, crv=P-521}
+2020-05-14 21:35:41,543  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.RsaJsonWebKey{kty=RSA, kid=J3RAtGBPCd59d1Y9tBWo59vx7hU, use=enc, n=gDYw0iNWftpbJ8ewT8I8T0eF9lR6w53OuhXOM33EBm--cj9j-vzEW0gMeq7dUSw-hNEi2ZDrQYF--TnnYtxmdWcOrQi-q9sZTTgtc_iEWCJNssNNydrpyHzQmdMqwZWypPEZX5Chyfrizc89rT0jYnROKu8DN4ISsMG18J2WFTMa3WoWkYXhnxoCeLwbBAuxilPt82f2fxOJPuEokAzFHe56Rr1LM_qtCpzG63oGJb1DT4AMzqx4-w-DshVzlVX1ruXDhjEdBam7EczCFb35w9uPrE4RBEuIWkcKI3G-zqfFJlIPNMf4AY1Fg183T8gX373GkitTHmxarLCV0cwSDw, e=AQAB}
+2020-05-14 21:35:41,544  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=uc2L0jfPg7lH3dspA2-BqAqn7mk, use=enc, x=Zhvln7ie1FVeRa0HwEXSSWMbgtSOcVDEeZvdnnMaNA8, y=yTCkaokvneh569O57ELYRw-7qg9EGe09O5dQ38sQ8Vc, crv=P-256}
+2020-05-14 21:35:41,544  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=MDzjXtaksXXM0dg9c535I_OG80A, use=enc, x=R7rUV85eG0Fo2XnL-8fvcD0QeJH9k5QAO-7HLdgTHRvaMpXLVZkOaF4M7zI-wRgP, y=8lu5bfpms03LkEsfGumIy-sCu3VjS0ol3noV4EET2ibWX12I84PKmypjqToTC5bA, crv=P-384}
+2020-05-14 21:35:41,544  INFO  [com.pingidentity.crypto.jwk.JwkState] Added new key to JSON Web Key Set: org.jose4j.jwk.EllipticCurveJsonWebKey{kty=EC, kid=r1DRllB7sLGhlc17xmAvkr9uDCs, use=enc, x=AXGwavzcVjG8SVcGLTuuLF-wYn5AbA0JoxInV_RV66ynNeYcdt_6x2uq8pPtM8dOK2N3IfqImiqN5Wa4ya-IyXsD, y=AYb54pzULhSBWQuCILkiBIoGi4JERK6BAf6CXIZEBE4ENn_UN-cD_LxDT8wS6fj_bfzaXilPcoVSF0GW-XenjSB1, crv=P-521}
+2020-05-14 21:35:41,553  INFO  [org.sourceid.websso.servlet.InitServlet] Starting org.sourceid.saml20.domain.mgmt.impl.MediatorImpl$3@3487442d at interval of 5000ms as indicated by ConfigArchiveDeployTimerInterval in timer-intervals.xml
+2020-05-14 21:35:41,563  INFO  [org.sourceid.websso.servlet.InitServlet] Starting com.pingidentity.crypto.ExpirationNotifier@6b4a4e40 at interval of 43200000ms as indicated by CertExpirationNotifierTimerInterval in timer-intervals.xml
+2020-05-14 21:35:41,591  INFO  [org.sourceid.websso.servlet.InitServlet] Starting org.sourceid.saml20.domain.util.api.filesystem.ConnectionImporter@72a8361b at interval of 5000ms as indicated by ConnectionImportTimerInterval in timer-intervals.xml
+2020-05-14 21:35:41,733  INFO  [org.sourceid.util.license.PingLicense] License loaded:
+License Edition: Free
+License ID: 1680675
+Issue Date: 5/9/20
+Product: PingFederate
+Version: 10.0
+Issued To: unspecified
+Org: unspecified
+Node Limit: unlimited
+Connection Limit: unlimited
+Expiration Date: 6/8/20
+Outbound Provisioning: true
+WS-Trust STS: true
+OAuth: true
+Generator: WebAPI
+2020-05-14 21:35:41,745  INFO  [org.sourceid.util.license.Watcher] Server licensing status is now: WARN
+2020-05-14 21:35:41,755  WARN  [org.sourceid.util.license.NotificationSupport$1] You are approaching the limit for your PingFederate license.
+License Edition: Free
+License ID: 1680675
+Issue Date: 5/9/20
+Product: PingFederate
+Version: 10.0
+Issued To: unspecified
+Org: unspecified
+Node Limit: unlimited
+Connection Limit: unlimited
+Expiration Date: 6/8/20
+Outbound Provisioning: true
+WS-Trust STS: true
+OAuth: true
+Generator: WebAPI
+2020-05-14 21:35:41,766  INFO  [org.sourceid.websso.servlet.InitServlet] Starting org.sourceid.oauth20.token.AccessGrantCleaner@e3899fd at interval of 86400000ms as indicated by AccessGrantCleanerInterval in timer-intervals.xml
+2020-05-14 21:35:42,389  INFO  [com.pingidentity.jmx.JmxBootstrapper] isActive=false and registry port is 1099
+2020-05-14 21:35:42,389  INFO  [com.pingidentity.jmx.JmxBootstrapper] Not starting Jmx Connector Server because rmi.registry.port config field is not set or service not active in application auth.
+2020-05-14 21:35:42,881  INFO  [org.sourceid.saml20.domain.util.InitMigrationUtil] No default SMTP notification publisher created. No previous SMTP settings (Email Configuration) exist.
+2020-05-14 21:35:43,005  INFO  [org.sourceid.websso.servlet.DeferredInitServlet] Initializing...
+2020-05-14 21:35:43,005  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@766a52f5{/,file:///opt/out/instance/work/jetty-0.0.0.0-9031-pf-runtime.war-_-any-6844310297302822664.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/pf-runtime.war}
+2020-05-14 21:35:43,021  INFO  [org.eclipse.jetty.server.RequestLogWriter] Opened /opt/out/instance/log/2020_05_14.request.log
+2020-05-14 21:35:43,030  INFO  [org.eclipse.jetty.deploy.providers.ScanningAppProvider] Deployment monitor [file:///opt/out/instance/server/default/deploy/] at interval 1
+2020-05-14 21:35:52,365  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=744ms
+2020-05-14 21:35:52,500  INFO  [org.eclipse.jetty.server.handler.ContextHandler._OAuthPlayground] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:35:54,454  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@259195fe{/OAuthPlayground,/OAuthPlayground,file:///opt/out/instance/work/jetty-0.0.0.0-9031-OAuthPlayground.war-_OAuthPlayground-any-3630544059351662324.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/OAuthPlayground.war}
+2020-05-14 21:35:55,061  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=6ms
+2020-05-14 21:35:55,069  INFO  [org.eclipse.jetty.server.handler.ContextHandler._pingid_web] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:35:55,093  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@60e67c06{PingID Offline Authentication,/pingid-web,file:///opt/out/instance/work/jetty-0.0.0.0-9031-pingid-web.war-_pingid-web-any-4559769413731843783.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/pingid-web.war}
+2020-05-14 21:36:00,939  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=2157ms
+2020-05-14 21:36:00,944  INFO  [org.eclipse.jetty.server.handler.ContextHandler._pf_scim] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:36:01,072  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@73d83141{PF-SCIM,/pf-scim,file:///opt/out/instance/work/jetty-0.0.0.0-9031-pf-scim.war-_pf-scim-any-15514379219998497294.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/pf-scim.war}
+2020-05-14 21:36:01,259  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=6ms
+2020-05-14 21:36:01,276  INFO  [org.eclipse.jetty.server.handler.ContextHandler._provisioner_runtime] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:36:01,323  INFO  [org.eclipse.jetty.server.handler.ContextHandler._provisioner_runtime] Initializing Spring root WebApplicationContext
+2020-05-14 21:36:01,323  INFO  [org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization started
+2020-05-14 21:36:01,435  INFO  [org.springframework.web.context.support.XmlWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Thu May 14 21:36:01 GMT 2020]; root of context hierarchy
+2020-05-14 21:36:01,563  INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2020-05-14 21:36:01,988  INFO  [org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 665 ms
+2020-05-14 21:36:02,003  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@26a9c6df{Provisioner,/provisioner-runtime,file:///opt/out/instance/work/jetty-0.0.0.0-9031-provisioner-runtime.war-_provisioner-runtime-any-4991562065247688297.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/provisioner-runtime.war}
+2020-05-14 21:36:05,273  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=1282ms
+2020-05-14 21:36:05,370  INFO  [org.eclipse.jetty.server.handler.ContextHandler._pf_ws] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:36:05,578  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@77cf329d{PF Runtime Webservices,/pf-ws,file:///opt/out/instance/work/jetty-0.0.0.0-9031-pf-ws.war-_pf-ws-any-15039456908433833384.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy/pf-ws.war}
+2020-05-14 21:36:05,587  INFO  [com.pingidentity.appserver.jetty.server.connector.ServerConnector] Starting listener class com.pingidentity.appserver.jetty.server.connector.ServerConnector 9031
+2020-05-14 21:36:05,760  INFO  [org.eclipse.jetty.util.ssl.SslContextFactory] x509=X509@79b4cff(vtcm75en83g6v1r87ytm7lihi,h=[localhost],w=[]) for RuntimeSslContextFactory@25c8c71e[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:05,999  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA enabled for RuntimeSslContextFactory@25c8c71e[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:06,000  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_RSA_WITH_AES_128_GCM_SHA256 enabled for RuntimeSslContextFactory@25c8c71e[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:06,000  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_RSA_WITH_AES_128_CBC_SHA256 enabled for RuntimeSslContextFactory@25c8c71e[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:06,000  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDH_RSA_WITH_AES_128_CBC_SHA enabled for RuntimeSslContextFactory@25c8c71e[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:06,001  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA enabled for RuntimeSslContextFactory@25c8c71e[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:06,051  INFO  [org.eclipse.jetty.server.AbstractConnector] Started ServerConnector@7f353a0f{SSL,[ssl, http/1.1]}{0.0.0.0:9031}
+2020-05-14 21:36:06,053  INFO  [com.pingidentity.appserver.jetty.server.connector.ServerConnector] Not starting listener class com.pingidentity.appserver.jetty.server.connector.ServerConnector because port was set to -1
+2020-05-14 21:36:06,055  INFO  [com.pingidentity.appserver.jetty.server.connector.ServerConnector] Not starting listener class com.pingidentity.appserver.jetty.server.connector.ServerConnector because port was set to -1
+2020-05-14 21:36:06,055  INFO  [org.eclipse.jetty.server.Server] Started @39348ms
+2020-05-14 21:36:06,055  INFO  [org.eclipse.jetty.server.Server] jetty-9.4.18.v20190429patch5; built: 2020-01-22T23:47:18.414Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-LTS
+2020-05-14 21:36:06,065  INFO  [org.eclipse.jetty.server.RequestLogWriter] Opened /opt/out/instance/log/2020_05_14.request2.log
+2020-05-14 21:36:06,066  INFO  [org.eclipse.jetty.deploy.providers.ScanningAppProvider] Deployment monitor [file:///opt/out/instance/server/default/deploy2/] at interval 1
+2020-05-14 21:36:31,585  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=4593ms
+2020-05-14 21:36:32,143  INFO  [org.eclipse.jetty.server.handler.ContextHandler.pf_admin_api] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:36:32,681  INFO  [com.pingidentity.pf.admin.rest.servlet.SwaggerConfig] The external facing admin API URL is https://localhost:9999/pf-admin-api/v1
+2020-05-14 21:36:32,708  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@1e1ea16d{PF ADMIN CONSOLE API,/pf-admin-api,file:///opt/out/instance/work/jetty-0.0.0.0-9999-pf-admin-api.war-_pf-admin-api-any-16867122616850652265.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy2/pf-admin-api.war}
+2020-05-14 21:36:32,976  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=64ms
+2020-05-14 21:36:32,986  INFO  [org.eclipse.jetty.server.handler.ContextHandler.pf_mgmt_ws] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:36:33,003  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@767cc126{PF,/pf-mgmt-ws,file:///opt/out/instance/work/jetty-0.0.0.0-9999-pf-mgmt-ws.war-_pf-mgmt-ws-any-17010963589948383526.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy2/pf-mgmt-ws.war}
+2020-05-14 21:36:35,779  INFO  [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=5ms
+2020-05-14 21:36:35,787  INFO  [org.eclipse.jetty.server.handler.ContextHandler.pingfederate] No Spring WebApplicationInitializer types detected on classpath
+2020-05-14 21:36:36,253  INFO  [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@50e0b472{HuronPeak,/pingfederate,file:///opt/out/instance/work/jetty-0.0.0.0-9999-pingfederate.war-_pingfederate-any-14916794571006834179.dir/webapp/,AVAILABLE}{/opt/out/instance/server/default/deploy2/pingfederate.war}
+2020-05-14 21:36:36,258  INFO  [com.pingidentity.appserver.jetty.server.connector.ServerConnector] Starting listener class com.pingidentity.appserver.jetty.server.connector.ServerConnector 9999
+2020-05-14 21:36:36,327  INFO  [org.eclipse.jetty.util.ssl.SslContextFactory] x509=X509@58690f5e(vtcm75en83g6v1r87ytm7lihi,h=[localhost],w=[]) for AdminSslContextFactory@57bfca3a[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:36,410  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA enabled for AdminSslContextFactory@57bfca3a[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:36,410  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_RSA_WITH_AES_128_GCM_SHA256 enabled for AdminSslContextFactory@57bfca3a[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:36,410  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_RSA_WITH_AES_128_CBC_SHA256 enabled for AdminSslContextFactory@57bfca3a[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:36,410  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDH_RSA_WITH_AES_128_CBC_SHA enabled for AdminSslContextFactory@57bfca3a[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:36,411  WARN  [org.eclipse.jetty.util.ssl.SslContextFactory.config] Weak cipher suite TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA enabled for AdminSslContextFactory@57bfca3a[provider=null,keyStore=null,trustStore=null]
+2020-05-14 21:36:36,412  INFO  [org.eclipse.jetty.server.AbstractConnector] Started ServerConnector@5707f613{SSL,[ssl, http/1.1]}{0.0.0.0:9999}
+2020-05-14 21:36:36,412  INFO  [org.eclipse.jetty.server.Server] Started @69740ms
+2020-05-14 21:36:37,096  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter PARTNER
+2020-05-14 21:36:37,098  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter TARGET
+2020-05-14 21:36:37,098  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter Binding
+2020-05-14 21:36:37,098  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter RequestedSPNameQualifier
+2020-05-14 21:36:37,098  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter PartnerSpId
+2020-05-14 21:36:37,099  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 3 validators for parameter SourceResource
+2020-05-14 21:36:37,100  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter SpSessionAuthnAdapterId
+2020-05-14 21:36:37,100  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 3 validators for parameter InErrorResource
+2020-05-14 21:36:37,101  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter RequestedACSIdx
+2020-05-14 21:36:37,101  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter ForceAuthn
+2020-05-14 21:36:37,101  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter IsPassive
+2020-05-14 21:36:37,101  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter RequestedBinding
+2020-05-14 21:36:37,102  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter RequestedFormat
+2020-05-14 21:36:37,102  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter TargetResource
+2020-05-14 21:36:37,102  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter idp
+2020-05-14 21:36:37,106  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter TokenProcessorId
+2020-05-14 21:36:37,107  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter IdpAdapterId
+2020-05-14 21:36:37,107  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter AllowCreate
+2020-05-14 21:36:37,107  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter Domain
+2020-05-14 21:36:37,107  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 2 validators for parameter PartnerIdpId
+2020-05-14 21:36:37,107  INFO  [org.sourceid.websso.servlet.reqparam.ValidationHub] Created 1 validators for parameter wtrealm
+2020-05-14 21:36:49,329  INFO  [org.sourceid.saml20.domain.mgmt.AbstractAuthManager] pf.console.authentication Authentication: native
+2020-05-14 21:36:56,985  INFO  [com.pingidentity.fsm.SessionTimeout] Application '/pingfederate' session timeout is 30 minutes.
+2020-05-14 21:37:36,482  INFO  [org.sourceid.websso.servlet.adapter.HandlerRegistry] Registering com.pingidentity.adapters.pingid.handler.PingIDResetAuthenticationHandler@541c4291 at /pingid-reset-primary-auth
+2020-05-14 21:37:36,482  INFO  [org.sourceid.websso.servlet.adapter.HandlerRegistry] Registering com.pingidentity.adapters.pingid.handler.PingIDResetAuthenticationHandler@541c4291 at /pingid-reset-primary-auth/
