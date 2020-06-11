@@ -1,1 +1,1 @@
-# pingfederate-sso-salesforce
+# pingfederate-httpbin-sp
