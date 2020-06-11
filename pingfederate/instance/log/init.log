@@ -3,3 +3,5 @@
 2020-05-14 21:18:48,492 Creating temp directory: /opt/out/instance/server/default/tmp
 2020-05-14 21:35:27,053 pf.operational.mode: STANDALONE
 2020-05-14 21:35:27,055 Set 48 system properties from /opt/out/instance/bin/run.properties
+2020-06-11 15:57:11,383 pf.operational.mode: STANDALONE
+2020-06-11 15:57:11,386 Set 48 system properties from /opt/out/instance/bin/run.properties

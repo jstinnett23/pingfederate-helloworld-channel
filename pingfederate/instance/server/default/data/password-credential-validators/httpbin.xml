@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PluginConfiguration isInheritExtendedContractAttributes="false" name="httpbin" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields/>
+    <urn:AdvancedFields/>
+    <urn:Tables>
+        <urn:Table name="Users">
+            <urn:Row defaultRow="false">
+                <urn:Field name="Username">pingchannel</urn:Field>
+                <urn:Field name="Password">NJnUPL6aYdRrx1tuXsa0xnRvJrQRHJum27aIgnjKDiE.bpGjqj3G.2</urn:Field>
+                <urn:Field name="Confirm Password">Oc_5eK5OA1wYRZl3zmLQGlAP9HWsWD59NJYX0m-j9u8.rxJujV-y.2</urn:Field>
+                <urn:Field name="Relax Password Requirements">true</urn:Field>
+            </urn:Row>
+        </urn:Table>
+    </urn:Tables>
+</urn:PluginConfiguration>

@@ -14,13 +14,20 @@ version: "3.1"
 #-    
 #-    Username: administrator
 #-    Password: 2FederateM0re
+#-
+#- Httpbin SP Test
+#-
+#-    https://localhost:9031/idp/startSSO.ping?PartnerSpId=httpbin
+#-
+#-    Username: pingchannel
+#-    Password: channelrocks!
 #-------------------------------------------------------------------------------------
 
 services:
   pingfederate:
     image: pingidentity/pingfederate:edge
     environment:
-      - SERVER_PROFILE_URL=https://github.com/jstinnett23/pingfederate-sso-salesforce
+      - SERVER_PROFILE_URL=https://github.com/jstinnett23/pingfederate-helloworld-channel
       - SERVER_PROFILE_PATH=pingfederate
     env_file:
       - ~/.pingidentity/devops

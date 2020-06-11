@@ -1,0 +1,102 @@
+<html jwcid="shell">
+<head>
+    <link href="images/favicon.ico?v=4" rel="shortcut icon" type="image/x-icon"/>
+</head>
+<body>
+
+<div id="header-container">
+    <span class="logo">
+        <b>PingFederate</b>
+        <sup>
+            <font size="1.5mm">®</font>
+        </sup>
+    </span>
+</div>
+
+<table class="interior popup">
+    <tr>
+        <td colspan="2">
+            <h2>
+                <span>Token Exchange Processor Policy Usage</span>
+            </h2>
+            <div class="messagetext">
+                <b class="note">Note:&nbsp;</b>
+                <span>This Token Exchange Processor Policy is used by the configurations identified below.</span>&nbsp;
+            </div>
+        </td>
+    </tr>
+    <span jwcid="@Conditional" condition="ognl:isShowMappingsUsingProcessorPolicy()" >
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend><span>Token Generator Mappings</span></legend>
+                    <table class="interior nested">
+                        <span jwcid="mapping@Foreach" source="ognl:getMappingsUsingProcessorPolicy()">
+                            <tr>
+                                <td id="mapping" class="subtasklet">
+                                    <span jwcid="@Insert" value="ognl:components.mapping.value.getName()"/>
+                                </td>
+                            </tr>
+                        </span>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+    </span>
+    <span jwcid="@Conditional" condition="ognl:isShowClientsUsingProcessorPolicy()" >
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend><span>OAuth Clients</span></legend>
+                    <table class="interior nested">
+                        <span jwcid="clients@Foreach" source="ognl:getClientsUsingProcessorPolicy()">
+                            <tr>
+                                <td id="client" class="subtasklet">
+                                    <span jwcid="@Insert" value="ognl:components.clients.value.getName()"/>
+                                </td>
+                            </tr>
+                        </span>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+    </span>
+    <span jwcid="@Conditional" condition="ognl:isClientSettingsUsingPolicy()" >
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend><span>Client Settings</span></legend>
+                    <table class="interior nested">
+                        <tr>
+                            <td class="subtasklet">
+                                <span>Client Configuration Defaults </span>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+    </span>
+
+    <span jwcid="@Conditional" condition="ognl:isShowAtmsUsingResource()" >
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend>Access Token Mappings</legend>
+                        <table class="interior nested">
+                            <span jwcid="accessTokenMappings@Foreach" source="ognl:getAtmsUsingResource()">
+                                <tr>
+                                    <td id="accessTokenMapping" class="subtasklet">
+                                        <span jwcid="@Insert" value="ognl:components.accessTokenMappings.value.getName()"/>
+                                    </td>
+                                </tr>
+                            </span>
+                        </table>
+                </fieldset>
+            </td>
+        </tr>
+    </span>
+</table>
+
+</body>
+</html>
