@@ -1,1 +1,1 @@
-# pingfederate-httpbin-sp
+# Basic PingFederate SSO
