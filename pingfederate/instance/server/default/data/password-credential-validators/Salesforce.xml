@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PluginConfiguration isInheritExtendedContractAttributes="false" name="Salesforce" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields/>
+    <urn:AdvancedFields/>
+    <urn:Tables>
+        <urn:Table name="Users">
+            <urn:Row defaultRow="false">
+                <urn:Field name="Username">pingchannel@demo.com</urn:Field>
+                <urn:Field name="Password">QxvgqBtHtr41m9xOX3pI6rMCvauCpwAJBNgQnN0GZYA.9QpuoSJ9.2</urn:Field>
+                <urn:Field name="Confirm Password">dOrj8IQPm1UT4QiAdAYq1dQNI37mXHDFqz50V-0RmlI.3UGU4Upk.2</urn:Field>
+                <urn:Field name="Relax Password Requirements">true</urn:Field>
+            </urn:Row>
+            <urn:Row defaultRow="false">
+                <urn:Field name="Username">jonstinnett+channeldemo@pingidentity.com</urn:Field>
+                <urn:Field name="Password">mK-gEElW_zGnzUv_zTSBPnWk1XYR3HkZ3nk8vKqLZZc.X2ie5sj9.2</urn:Field>
+                <urn:Field name="Confirm Password">m43E1E64SOWFTLjnu6I0ZO0KJLo4PWHedyTQGtc_8cM.k8FX8EeP.2</urn:Field>
+                <urn:Field name="Relax Password Requirements">true</urn:Field>
+            </urn:Row>
+        </urn:Table>
+    </urn:Tables>
+</urn:PluginConfiguration>

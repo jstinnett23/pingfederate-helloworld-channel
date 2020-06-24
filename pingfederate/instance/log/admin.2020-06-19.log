@@ -1,0 +1,5 @@
+2020-06-19 16:39:44,592 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | USER | LOGIN_ATTEMPT |  | Login was successful
+2020-06-19 16:43:59,213 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | PCV | CREATE |  | Salesforce
+2020-06-19 19:33:03,579 | Administrator |  | 172.23.0.1 | USER | LOGIN_ATTEMPT |  | Incorrect password
+2020-06-19 19:33:09,617 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | USER | LOGIN_ATTEMPT |  | Login was successful
+2020-06-19 23:58:27,777 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | USER | LOGIN_ATTEMPT |  | Login was successful

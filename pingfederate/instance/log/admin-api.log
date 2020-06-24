@@ -1,0 +1,6 @@
+2020-06-20 00:03:32,403| unknown| Bearer| 172.23.0.1| GET| /idp/spConnections?page=1&numberPerPage=50&filter=&samlOnly=true| 401 
+2020-06-20 00:03:32,618| Administrator| Bearer| 172.23.0.1| GET| /idp/spConnections?page=1&numberPerPage=50&filter=&samlOnly=true| 200 
+2020-06-20 00:08:30,274| unknown| Bearer| 172.23.0.1| GET| /idp/spConnections?page=1&numberPerPage=50&filter=&samlOnly=true| 401 
+2020-06-20 00:08:30,292| Administrator| Bearer| 172.23.0.1| GET| /idp/spConnections?page=1&numberPerPage=50&filter=&samlOnly=true| 200 
+2020-06-20 00:18:51,329| unknown| Bearer| 172.23.0.1| GET| /idp/spConnections?page=1&numberPerPage=50&filter=&samlOnly=true| 401 
+2020-06-20 00:18:51,347| Administrator| Bearer| 172.23.0.1| GET| /idp/spConnections?page=1&numberPerPage=50&filter=&samlOnly=true| 200 

@@ -1,0 +1,19 @@
+2020-06-11 15:59:04,382 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | USER | LOGIN_ATTEMPT |  | Login was successful
+2020-06-11 16:04:18,095 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | LICENSE | IMPORT |  | PingFederate-10.1-Production.lic
+2020-06-11 16:17:25,103 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | PCV | CREATE |  | httpbin
+2020-06-11 16:18:52,637 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | IDP_ADAPTER | CREATE |  | adapter_httpbin
+2020-06-11 16:24:39,724 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | CERTIFICATE | CREATE |  | Dsign Certificate - CN=pingchannel, O=Ping, C=US
+2020-06-11 16:24:58,382 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | SP_CONNECTION | CREATE |  | httpbin
+2020-06-11 16:27:14,872 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | SP_CONNECTION | MODIFY |  | httpbin
+2020-06-11 16:28:20,575 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | SP_CONNECTION | MODIFY |  | httpbin
+2020-06-11 16:28:45,742 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | SP_CONNECTION | MODIFY |  | httpbin
+2020-06-11 16:30:35,956 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | SP_CONNECTION | MODIFY |  | httpbin
+2020-06-11 16:32:18,957 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | SP_CONNECTION | MODIFY |  | httpbin
+2020-06-11 16:33:08,020 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | SP_CONNECTION | MODIFY |  | httpbin
+2020-06-11 16:33:30,462 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.19.0.1 | SP_CONNECTION | MODIFY |  | httpbin
+2020-06-11 17:12:09,071 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.20.0.1 | USER | LOGIN_ATTEMPT |  | Login was successful
+2020-06-11 17:39:12,015 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.20.0.1 | SP_ADAPTER | CREATE |  | opentoken
+2020-06-11 17:41:16,884 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.20.0.1 | METADATA_URL | CREATE |  | https://idp.int.identitysandbox.gov/api/saml/metadata2020
+2020-06-11 17:43:16,009 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.20.0.1 | IDP_CONNECTION | CREATE |  | https://idp.int.identitysandbox.gov/api/saml
+2020-06-11 17:43:24,081 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.20.0.1 | IDP_CONNECTION | MODIFY |  | https://idp.int.identitysandbox.gov/api/saml
+2020-06-11 17:51:35,893 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.20.0.1 | IDP_CONNECTION | MODIFY |  | https://idp.int.identitysandbox.gov/api/saml

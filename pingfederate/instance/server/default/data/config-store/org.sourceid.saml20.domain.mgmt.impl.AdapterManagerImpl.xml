@@ -2,5 +2,9 @@
 <con:config xmlns:con="http://www.sourceid.org/2004/05/config">
     <con:map name="IdpAuthnAdapterInstances">
         <con:item name="httpbin">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
+        <con:item name="Salesforce">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
+    </con:map>
+    <con:map name="SpAuthnAdapterInstances">
+        <con:item name="opentoken">com.pingidentity.adapters.opentoken.SpAuthnAdapter</con:item>
     </con:map>
 </con:config>

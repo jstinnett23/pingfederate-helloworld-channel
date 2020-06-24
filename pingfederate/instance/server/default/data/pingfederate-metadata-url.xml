@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mu:metadataUrls xmlns:mu="http://pingidentity.com/2015/01/metadata-url">
+    <mu:metadataUrlCertType>
+        <mu:id>qJYxwgALKEOVzicqUuFxOhAEI</mu:id>
+        <mu:name>Login dot Gov Sandbox</mu:name>
+        <mu:metadataUrl>https://idp.int.identitysandbox.gov/api/saml/metadata2020</mu:metadataUrl>
+        <mu:certAlias>u77t7xcne02cs4755n2x5yt9s</mu:certAlias>
+        <mu:validateSignature>true</mu:validateSignature>
+    </mu:metadataUrlCertType>
 </mu:metadataUrls>

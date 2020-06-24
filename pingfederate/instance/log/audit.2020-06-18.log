@@ -1,0 +1,3 @@
+2020-06-18 18:19:08,312| tid:t8rZqqUdY1AVcKEjam1y55YEkRk| AUTHN_ATTEMPT| | 172.19.0.1 | | httpbin| SAML20| f4768ec1129a| IdP| inprogress| httpbin| | 307 
+2020-06-18 18:19:13,632| tid:t8rZqqUdY1AVcKEjam1y55YEkRk| AUTHN_ATTEMPT| pingchannel| 172.19.0.1 | | httpbin| SAML20| f4768ec1129a| IdP| success| httpbin| | 49 
+2020-06-18 18:19:13,685| tid:t8rZqqUdY1AVcKEjam1y55YEkRk| SSO| pingchannel| 172.19.0.1 | | httpbin| SAML20| f4768ec1129a| IdP| success| httpbin| | 102 

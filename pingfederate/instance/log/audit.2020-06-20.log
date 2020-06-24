@@ -1,0 +1,10 @@
+2020-06-20 00:09:39,211| tid:krvETKHv5vUDkevvhNLjGVWFTxo| AUTHN_ATTEMPT| | 172.23.0.1 | | salesforce| SAML20| ffb11ace9098| IdP| inprogress| Salesforce| | 253 
+2020-06-20 00:09:57,579| tid:krvETKHv5vUDkevvhNLjGVWFTxo| AUTHN_ATTEMPT| pingchannel@demo.com| 172.23.0.1 | | salesforce| SAML20| ffb11ace9098| IdP| success| Salesforce| | 58 
+2020-06-20 00:09:57,641| tid:krvETKHv5vUDkevvhNLjGVWFTxo| SSO| pingchannel@demo.com| 172.23.0.1 | | salesforce| SAML20| ffb11ace9098| IdP| success| Salesforce| | 120 
+2020-06-20 00:21:06,174| tid:krvETKHv5vUDkevvhNLjGVWFTxo| AUTHN_ATTEMPT| | 172.23.0.1 | | salesforce| SAML20| ffb11ace9098| IdP| inprogress| Salesforce| | 10 
+2020-06-20 00:21:15,873| tid:krvETKHv5vUDkevvhNLjGVWFTxo| AUTHN_ATTEMPT| pingchannel@demo.com| 172.23.0.1 | | salesforce| SAML20| ffb11ace9098| IdP| inprogress| Salesforce| | 21 
+2020-06-20 00:21:20,998| tid:krvETKHv5vUDkevvhNLjGVWFTxo| AUTHN_ATTEMPT| pingchannel@demo.com| 172.23.0.1 | | salesforce| SAML20| ffb11ace9098| IdP| success| Salesforce| | 7 
+2020-06-20 00:21:21,000| tid:krvETKHv5vUDkevvhNLjGVWFTxo| SSO| pingchannel@demo.com| 172.23.0.1 | | salesforce| SAML20| ffb11ace9098| IdP| success| Salesforce| | 9 
+2020-06-20 00:21:44,926| tid:krvETKHv5vUDkevvhNLjGVWFTxo| AUTHN_ATTEMPT| | 172.23.0.1 | | salesforce| SAML20| ffb11ace9098| IdP| inprogress| Salesforce| | 13 
+2020-06-20 00:21:51,975| tid:krvETKHv5vUDkevvhNLjGVWFTxo| AUTHN_ATTEMPT| pingchannel@demo.com| 172.23.0.1 | | salesforce| SAML20| ffb11ace9098| IdP| success| Salesforce| | 7 
+2020-06-20 00:21:51,978| tid:krvETKHv5vUDkevvhNLjGVWFTxo| SSO| pingchannel@demo.com| 172.23.0.1 | | salesforce| SAML20| ffb11ace9098| IdP| success| Salesforce| | 10 
