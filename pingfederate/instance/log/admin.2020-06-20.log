@@ -1,9 +1,0 @@
-2020-06-20 00:01:00,332 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | IDP_ADAPTER | CREATE |  | Salesforce
-2020-06-20 00:03:08,102 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | SP_CONNECTION | CREATE |  | salesforce
-2020-06-20 00:03:43,736 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | METADATA | EXPORT |  | metadata.xml
-2020-06-20 00:07:06,074 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | SP_CONNECTION | MODIFY |  | salesforce
-2020-06-20 00:07:14,809 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | SP_CONNECTION | MODIFY |  | salesforce
-2020-06-20 00:08:37,464 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | METADATA | EXPORT |  | metadata.xml
-2020-06-20 00:18:38,907 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | SP_CONNECTION | MODIFY |  | salesforce
-2020-06-20 00:18:59,573 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | METADATA | EXPORT |  | metadata.xml
-2020-06-20 00:21:42,132 | Administrator | UserAdmin,Admin,CryptoAdmin | 172.23.0.1 | SP_CONNECTION | MODIFY |  | salesforce
