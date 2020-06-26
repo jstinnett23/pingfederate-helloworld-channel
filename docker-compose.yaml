@@ -45,7 +45,7 @@ services:
       - pingnet
     # volumes:
     # - ./pingfederate-in:/opt/in
-    # - ./pingfederate:/opt/out
+    # - ./pingfederate-out:/opt/out
                     
 networks:
     pingnet:
