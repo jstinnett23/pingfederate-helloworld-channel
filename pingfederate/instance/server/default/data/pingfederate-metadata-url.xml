@@ -7,4 +7,11 @@
         <mu:certAlias>u77t7xcne02cs4755n2x5yt9s</mu:certAlias>
         <mu:validateSignature>true</mu:validateSignature>
     </mu:metadataUrlCertType>
+    <mu:metadataUrlCertType>
+        <mu:id>Lnm6lDtBVi5BTJwAl0cjSgHuT</mu:id>
+        <mu:name>IAM Showcase</mu:name>
+        <mu:metadataUrl>https://sptest.iamshowcase.com/testsp_metadata.xml</mu:metadataUrl>
+        <mu:certAlias xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <mu:validateSignature>true</mu:validateSignature>
+    </mu:metadataUrlCertType>
 </mu:metadataUrls>

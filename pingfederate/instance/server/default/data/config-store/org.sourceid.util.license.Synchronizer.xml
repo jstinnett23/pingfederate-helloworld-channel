@@ -2,4 +2,5 @@
 <con:config xmlns:con="http://www.sourceid.org/2004/05/config">
     <con:item name="1680675:WARN">2020-05-21</con:item>
     <con:item name="1680675:VIOLATION">2020-06-18</con:item>
+    <con:item name="1685506:WARN">2020-07-03</con:item>
 </con:config>

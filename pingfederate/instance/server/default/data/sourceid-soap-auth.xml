@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SoapAuth xmlns="http://www.sourceid.org/2004/04/soapauth">
-    <Incoming/>
-    <Outgoing/>
+    <Incoming>
+        <Basic providerID="(SP) ::: IAMShowcase" ssl="true" disableCertChainValidation="false" password="kgffsqAT7OPeRua_lZd7dgjl9gw9glMm_1UZ2lk8q0Q.IgPCiF-w.2" username="pingchannel"/>
+    </Incoming>
+    <Outgoing>
+        <Basic providerID="(SP) ::: IAMShowcase" ssl="false" disableCertChainValidation="false" password="eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4xLjAuOCJ9..u0gAQbNRPxzkiqRiug9fIQ.B6kdceG1ZMgxgOAPyjzyGQ.wZyJxRcc7PgR_9il-MIwgw" username="pingchannel"/>
+    </Outgoing>
 </SoapAuth>
